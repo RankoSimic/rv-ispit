@@ -1,0 +1,76 @@
+\documentclass[]{report}
+\usepackage[croatian]{babel} 
+%\usepackage{enumerate}  
+
+% Title Page
+\title{Ispit iz Računalnih vještina}
+\author{Antun Simić}
+\date{Datum: 23.2.2022.}
+
+\thispagestyle{empty}
+
+\begin{document}
+\maketitle
+
+\newpage
+%\section{Zadaci}
+
+1. zadatak: Izračunaj sljedeći izraz
+\newline
+\begin{equation}
+	B=\frac{377\pi}{2Z_0\sqrt{\epsilon_r}} 
+\end{equation}
+
+2. zadatak: Izračunaj sljedeći zadatak koristeći literaturu pod br.2
+%\newline
+\begin{equation}
+	W_0=h \cdot \frac{2}{\pi} \cdot \left[B - 1 - ln(2B - 1) + \frac{\epsilon_r - 1}{2\epsilon_r} \cdot \left\lbrace ln(B-1) + 0,39 - \frac{0,61}{\epsilon_r} \right\rbrace \right] 
+\end{equation}
+
+3. zadatak: Izračunaj vrijednost određenog integrala zadnog u nastavku 
+\newline
+\begin{equation}
+	I_2 = \int_{0}^{\phi}\int_{0}^{\pi} \left[ \frac{\sin(\frac{k_0 W_p}{2} \cos(\theta)}{\cos(\theta)}\right] ^2 \sin^3(\theta)  
+\cos ^2 \left(  \frac{k_0 L_e}{2} \sin(\theta) \sin(\phi) \right) d\theta d\phi \label{eq:3} 
+\end{equation}  
+\newline
+
+4. zadatak: Provjera pisanja znaka korijena bez numeričke oznake formule 
+
+$$
+	W_p = \frac{c}{2f_r} \cdot \sqrt{\frac{2}{\epsilon_r + 1}}
+$$
+5. zadatak: Repozitoriji na GitHubu ne mogu biti javni
+\begin{description}
+	\item[a)] točno
+	\item[b)] netočno
+\end{description} 
+
+6. zadatak: pokazivači 
+\newline
+Formula iz trećeg zadatka je dosta složena, a u nastavku je pokazivač na tu formulu \ref{eq:3}
+\newline
+Dosta o latexu se može naučiti iz \cite{antun} i \cite{latex:web}
+
+
+7. zadatak: Tablice 
+\begin{table}[!htbp]
+	\caption{Broj bodova po zadacima}
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|c|}
+		\hline
+		Zadatak & 1. & 2. & 3. & 4. & 5. & 6.& 7.\\ [0.5ex]
+		\hline 
+		Bodovi &  &  &  & & & &\\ [0.5ex]
+		\hline
+	\end{tabular}
+	\label{tab:ID_tabele}
+\end{table}
+
+\newpage
+
+%\section*{Literatura}
+% naredbom u nastavku se uključuje Literatura_as.tex
+\input{Literatura}
+
+\end{document}          
